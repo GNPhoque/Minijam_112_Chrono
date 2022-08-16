@@ -13,8 +13,6 @@ public class Player : MonoBehaviour
 	PlayerInputs inputs;
 	new Transform transform;
 
-	int health = 10;
-	int maxHealth = 3;
 	TilePosition tilePosition;
 
 	private void Awake()
@@ -107,9 +105,9 @@ public class Player : MonoBehaviour
 
 	public void Damage()
 	{
-		health--;
+		GameManager.playerHealth--;
 		GameManager.instance.UpdatePlayerHP();
-		if (health <= 0)
+		if (GameManager.playerHealth <= 0)
 		{
 			Die();
 		}
@@ -129,6 +127,6 @@ public class Player : MonoBehaviour
 
 	#region ACCESSORS
 	public int GetTilePosition() => (int)tilePosition; 
-	public int GetHealth() => health;
+	public int GetHealth() => GameManager.playerHealth;
 	#endregion
 }

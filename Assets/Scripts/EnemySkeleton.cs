@@ -8,8 +8,6 @@ public class EnemySkeleton : Enemy
 	{
 		int target = Random.Range(0, 4);
 		AttackTile(target);
-		target = Random.Range(0, 4);
-		AttackTile(target);
 		animator.SetIsInAttackAnticipation(true);
 	}
 }

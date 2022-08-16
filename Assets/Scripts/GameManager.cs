@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
 	bool oddbeat;
 
 	public static GameManager instance;
+	public static int playerHealth = 0;
 
 	private void Awake()
 	{
@@ -35,6 +36,7 @@ public class GameManager : MonoBehaviour
 		player = FindObjectOfType<Player>();
 		enemy = FindObjectOfType<Enemy>();
 
+		if (playerHealth == 0) playerHealth = 15;
 		targetedTiles = new List<SpriteRenderer>();
 
 		Conductor.instance.OnBeatChanged += Conductor_OnBeatChanged;

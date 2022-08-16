@@ -1255,7 +1255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstBeatOffsetBeatRatio: 0.6
-  songBpm: 89
+  songBpm: 45
   timingToleranceBeatRatio: 0.2
 --- !u!82 &357273948
 AudioSource:
@@ -1267,8 +1267,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ee98344c7251ec849b7a1f64f69ecd71, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: cbe6adfaf68c9a14494ea274d21f7f45, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -5039,8 +5039,8 @@ Transform:
   m_GameObject: {fileID: 1973213015}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.94, y: 0.94, z: 0.94}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 507098778}
   m_RootOrder: 0
@@ -5086,7 +5086,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -172
-  m_Sprite: {fileID: 21300000, guid: 7cda35d0fbfb0024e881dc447d1e1f24, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1c4d2ec48a319204a98897efb115158e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
